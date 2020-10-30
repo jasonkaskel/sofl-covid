@@ -60,10 +60,11 @@ const App = () => {
           },
         ]}
         layout={{
-          width: 1200,
-          height: 800,
+          autosize: true,
           title: "SoFl Covid Cases 7 day average (updated weekly on Mondays)",
         }}
+        useResizeHandler
+        style={{ width: "100%", height: "100%" }}
       />
       <br />
       <i>
