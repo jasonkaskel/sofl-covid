@@ -68,11 +68,13 @@ const App = () => {
       />
       <br />
       <i>
+        by <a href="https://twitter.com/jason_kaskel?lang=en">@jason_kaskel</a>{" "}
+        |{" "}
         <a href="https://floridacovidaction-covidaction.hub.arcgis.com/datasets/3dab5ba14f1a46a69ca4586d95516ab2_0">
           source
-        </a>
-        : Florida Covid Action
-      </i>
+        </a>{" "}
+        Florida Covid Action
+      </i>{" "}
       <br />
       <br />
     </div>
