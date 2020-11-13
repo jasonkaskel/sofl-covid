@@ -20,6 +20,7 @@
 
 # intermediate data processing files
 *.int
+/raw_caseline_data
 
 npm-debug.log*
 yarn-debug.log*
