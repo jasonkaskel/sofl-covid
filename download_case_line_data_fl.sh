@@ -24,7 +24,8 @@ else
     echo "[" > $FILE
 fi
 
-URI="https://services2.arcgis.com/QTlu74VtgQxQNkN3/arcgis/rest/services/FCA_Case_Line_Data_from_DOH/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json&orderByFields=Case_Date DESC&resultOffset="
+# URI="https://services2.arcgis.com/QTlu74VtgQxQNkN3/arcgis/rest/services/FCA_Case_Line_Data_from_DOH/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json&orderByFields=Case_Date DESC&resultOffset="
+URI="https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data_NEW/FeatureServer/0/query?where=1%3D1&outFields=County,Case_,Contact,Case1,EventDate,ChartDate,ObjectId&outSR=4326&f=json&orderByFields=ChartDate DESC&resultOffset="
 OFFSET=0
 JSON=`wget -nv -O - "${URI}${OFFSET}"`
 LEN=`echo $JSON | jq .features | jq length`

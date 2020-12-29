@@ -5,9 +5,9 @@ raw_cases = JSON.parse(File.read("#{CASE_LINE_FILE}.int"))
 flat_cases = raw_cases.map { |res| res['features'] }.compact.flatten
 uniq_cases = flat_cases.map do |casex| 
     [ 
-        casex.dig('attributes','ObjectId2'), 
+        casex.dig('attributes','ObjectId'), 
         casex.dig('attributes','County'),
-        casex.dig('attributes','Case_Date')
+        casex.dig('attributes','ChartDate')
     ]
 end.uniq(&:first)
 
